@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<div class="container"></div>
+	<div id="view"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+<script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+<script src="model.js"></script>
+<script src="view.js"></script>
+
+<script>
+  var model = new Model();
+  model.set('title', 'MODEL TITLE');
+  model.set('completed', 'MODEL COMPLETED');
+  var view = new View({model:model});
+
+</script>
+
+</body>
+</html>
